@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    .options-container { padding: 20px; max-width: 500px; margin: 0 auto; }
+    .setting { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .setting:last-child { border-bottom: none; }
+    .setting label { display: block; margin-bottom: 8px; font-weight: 500; }
+    .setting input[type="checkbox"] { width: auto; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <div class="options-container">
+    <h2>OSINT Investigator Settings</h2>
+    
+    <div class="setting">
+      <label>
+        <input type="checkbox" id="darkMode"> Dark Mode
+      </label>
+    </div>
+    
+    <div class="setting">
+      <label>
+        <input type="checkbox" id="autoScan"> Auto-scan on page load
+      </label>
+    </div>
+    
+    <div class="setting">
+      <button id="exportSettings" class="quick-btn">📤 Export Settings</button>
+      <button id="resetSettings" class="quick-btn" style="background: var(--danger); color: white;">Reset All</button>
+    </div>
+    
+    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border);">
+      <h3>Data Sources</h3>
+      <ul style="font-size: 12px; color: var(--text-secondary);">
+        <li>• IP Geolocation: ipinfo.io (free tier)</li>
+        <li>• Technology Detection: Client-side fingerprinting</li>
+        <li>• Contact Extraction: Page content analysis</li>
+        <li>• Security: Browser APIs</li>
+      </ul>
+      <p style="font-size: 11px; margin-top: 10px; color: var(--text-secondary);">
+        All data is public OSINT. No personal data collected.
+      </p>
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

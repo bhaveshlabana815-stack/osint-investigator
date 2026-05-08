@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "OSINT Investigator Pro",
+  "version": "2.0",
+  "description": "Real OSINT Website Intelligence Tool",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "*://*/*",
+    "https://ipapi.co/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
