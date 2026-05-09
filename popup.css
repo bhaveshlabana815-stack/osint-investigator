@@ -1,29 +1,32 @@
 body{
-font-family:Arial;
+font-family: Arial;
+width:350px;
+padding:10px;
 background:#111;
 color:white;
-width:320px;
-padding:10px;
 }
 
 h2{
 text-align:center;
-color:#00ffaa;
+}
+
+.section{
+margin-top:10px;
+padding:8px;
+background:#1e1e1e;
+border-radius:5px;
 }
 
 button{
-background:#00ffaa;
-border:none;
-padding:8px;
+margin-top:5px;
+padding:6px;
 width:100%;
-margin-top:8px;
+background:#00ff88;
+border:none;
 cursor:pointer;
 }
 
-.box{
-margin-top:10px;
-}
-
-.tools{
-margin-top:10px;
+pre{
+white-space:pre-wrap;
+font-size:12px;
 }
